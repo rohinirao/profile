@@ -1,0 +1,193 @@
+/* 
+   Responsive Stylesheet for Rohini Ramakrishna's Portfolio
+   Author: Rohini Ramakrishna
+   Version: 1.0
+*/
+
+/* ===== RESPONSIVE STYLES ===== */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  section {
+    padding: 60px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.25rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.35rem;
+  }
+  
+  #hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-content {
+    order: 2;
+    margin-top: 30px;
+  }
+  
+  .hero-image {
+    order: 1;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .timeline::before {
+    left: 60px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-dot {
+    left: 52px;
+    right: auto;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 52px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  section {
+    padding: 50px 0;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  #nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  #nav-menu.active {
+    left: 0;
+  }
+  
+  #nav-menu ul {
+    flex-direction: column;
+  }
+  
+  #nav-menu ul li {
+    margin: 10px 0;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .footer-info h3::after,
+  .footer-links h3::after,
+  .footer-contact h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-contact p {
+    justify-content: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.25rem;
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .timeline-item {
+    padding-left: 70px;
+  }
+  
+  .timeline::before {
+    left: 30px;
+  }
+  
+  .timeline-dot {
+    left: 22px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 22px;
+  }
+}

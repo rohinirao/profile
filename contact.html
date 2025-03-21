@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rohini Ramakrishna</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Get in touch with Rohini Ramakrishna - Senior Software Developer specializing in Ruby on Rails, JavaScript, and API integrations">
+    <meta name="keywords" content="contact, software developer, ruby on rails, javascript, munich, germany">
+    <meta name="author" content="Rohini Ramakrishna">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact | Rohini Ramakrishna">
+    <meta property="og:description" content="Get in touch with Rohini Ramakrishna - Senior Software Developer">
+    <meta property="og:image" content="assets/images/profile.jpg">
+    <meta property="og:url" content="https://rohinirao.github.io/contact.html">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Rohini Ramakrishna</a>
+            </div>
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section id="page-title" class="animate-on-scroll">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>I'd love to hear from you. Feel free to reach out about opportunities, collaborations, or just to say hello!</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact-info" class="animate-on-scroll">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"> Email </i>
+                    </div>
+                    <p>rohini.rao.r@gmail.com <a href="mailto:rohini.rao.r@gmail.com" class="btn btn-sm">Send Email</a> </p>
+                    
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"> Phone </i>
+                    </div>
+                    <p>+49 176 62920400 <a href="tel:+4917662920400" class="btn btn-sm">Call Me</a></p>
+                    
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"> LinkedIn </i>
+                    </div>
+                    <p>Connect with me  <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank" class="btn btn-sm">View Profile</a></p>
+                   
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"> GitHub </i>
+                    </div>
+                    <p>Check out my code <a href="https://github.com/rohinirao" target="_blank" class="btn btn-sm">View Repos</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">Send Me a Message</h2>
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+                <div id="form-status" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="animate-on-scroll">
+        <div class="container">
+            <h2 class="section-title">Location</h2>
+            <div class="map-container">
+                <div class="map-overlay">
+                    <div class="map-info">
+                        <h3>Based in Munich, Germany</h3>
+                        <p>Available for remote work and local opportunities</p>
+                    </div>
+                </div>
+                <div class="embedded-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170129.56863268872!2d11.371870316395691!3d48.15526529534932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sus!4v1647458548251!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Rohini Ramakrishna</h3>
+                    <p>Senior Software Developer based in Munich, Germany</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> rohini.rao.r@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +49 176 62920400</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/rohinirao" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rohini Ramakrishna. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Simple form validation and submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            const formStatus = document.getElementById('form-status');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(contactForm);
+                    const formAction = contactForm.getAttribute('action');
+                    
+                    // Show loading state
+                    formStatus.textContent = 'Sending message...';
+                    formStatus.style.display = 'block';
+                    formStatus.className = 'form-status info';
+                    
+                    // This is where you'd typically send the form data to your server
+                    // For demo purposes, we'll simulate a successful submission
+                    setTimeout(() => {
+                        // Success message
+                        formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                        formStatus.className = 'form-status success';
+                        contactForm.reset();
+                    }, 1500);
+                    
+                    // If using a service like Formspree, uncomment the following code
+                    /*
+                    fetch(formAction, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.ok) {
+                            formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                            formStatus.className = 'form-status success';
+                            contactForm.reset();
+                        } else {
+                            throw new Error('Form submission failed');
+                        }
+                    })
+                    .catch(error => {
+                        formStatus.textContent = 'There was a problem sending your message. Please try again later.';
+                        formStatus.className = 'form-status error';
+                    });
+                    */
+                });
+            }
+        });
+    </script>
+</body>
+</html>
