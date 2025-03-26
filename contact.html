@@ -45,7 +45,7 @@
     </header>
 
     <!-- Page Title -->
-    <section id="page-title" class="animate-on-scroll">
+    <section id="page-title" class="animate-on-scroll fade-in">
         <div class="container">
             <h1>Get In Touch</h1>
             <p>I'd love to hear from you. Feel free to reach out about opportunities, collaborations, or just to say hello!</p>
@@ -53,43 +53,39 @@
     </section>
 
     <!-- Contact Information -->
-    <section id="contact-info" class="animate-on-scroll">
+    <section id="contact-info" class="animate-on-scroll slide-up">
         <div class="container">
             <div class="contact-grid">
-                <div class="contact-card">
+                <div class="contact-card skill-category">
                     <div class="contact-icon">
-                        <i class="fas fa-envelope"> Email </i>
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
                     </div>
-                    <p>rohini.rao.r@gmail.com <a href="mailto:rohini.rao.r@gmail.com" class="btn btn-sm">Send Email</a> </p>
-                    
+                    <p>rohini.rao.r@gmail.com</p>
+                    <a href="mailto:rohini.rao.r@gmail.com" class="btn btn-primary btn-sm">Send Email</a>
                 </div>
-                <div class="contact-card">
+                <div class="contact-card skill-category">
                     <div class="contact-icon">
-                        <i class="fas fa-phone"> Phone </i>
+                        <i class="fab fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
                     </div>
-                    <p>+49 176 62920400 <a href="tel:+4917662920400" class="btn btn-sm">Call Me</a></p>
-                    
+                    <p>Connect with me professionally</p>
+                    <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank" class="btn btn-primary btn-sm">View Profile</a>
                 </div>
-                <div class="contact-card">
+                <div class="contact-card skill-category">
                     <div class="contact-icon">
-                        <i class="fab fa-linkedin"> LinkedIn </i>
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub</h3>
                     </div>
-                    <p>Connect with me  <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank" class="btn btn-sm">View Profile</a></p>
-                   
-                </div>
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"> GitHub </i>
-                    </div>
-                    <p>Check out my code <a href="https://github.com/rohinirao" target="_blank" class="btn btn-sm">View Repos</a></p>
-                    
+                    <p>Check out my code repositories</p>
+                    <a href="https://github.com/rohinirao" target="_blank" class="btn btn-primary btn-sm">View Repos</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Map Section -->
-    <section id="map" class="animate-on-scroll">
+    <section id="map" class="animate-on-scroll slide-up">
         <div class="container">
             <h2 class="section-title">Location</h2>
             <div class="map-container">
@@ -103,6 +99,15 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170129.56863268872!2d11.371870316395691!3d48.15526529534932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e75f9a38c5fd9%3A0x10cb84a7db1987d!2sMunich%2C%20Germany!5e0!3m2!1sen!2sus!4v1647458548251!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact-cta">
+        <div class="container">
+            <h2>Ready to Work Together?</h2>
+            <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+            <a href="mailto:rohini.rao.r@gmail.com" class="btn btn-primary">Let's Connect</a>
         </div>
     </section>
 
@@ -127,7 +132,7 @@
                 <div class="footer-contact">
                     <h3>Contact</h3>
                     <p><i class="fas fa-envelope"></i> rohini.rao.r@gmail.com</p>
-                    <p><i class="fas fa-phone"></i> +49 176 62920400</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/rohinirao" target="_blank"><i class="fab fa-github"></i></a>
@@ -139,5 +144,42 @@
             </div>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Header scroll effects
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+
+        // Animation on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            
+            function checkInView() {
+                animateElements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkInView);
+            checkInView(); // Check on initial load
+        });
+    </script>
 </body>
 </html>

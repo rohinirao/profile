@@ -1,13 +1,30 @@
-/* 
-   Responsive Stylesheet for Rohini Ramakrishna's Portfolio
-   Author: Rohini Ramakrishna
-   Version: 1.0
-*/
+/* Responsive Stylesheet for Rohini Ramakrishna's Portfolio - Enhanced Version */
+/* Author: Rohini Ramakrishna */
+/* Version: 1.2 */
 
 /* ===== RESPONSIVE STYLES ===== */
 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.75rem;
+  }
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+  
   h1 {
     font-size: 2.25rem;
   }
@@ -19,10 +36,42 @@
   .hero-content h1 {
     font-size: 2.5rem;
   }
+  
+  .hero-image img {
+    max-width: 90%;
+  }
+  
+  .timeline::before {
+    left: 40px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 0;
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-dot {
+    left: 32px;
+    right: auto;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 32px;
+  }
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .container {
+    max-width: 720px;
+  }
+  
   section {
     padding: 60px 0;
   }
@@ -38,110 +87,155 @@
   #hero .container {
     flex-direction: column;
     text-align: center;
-  }
-  
-  .hero-content {
-    order: 2;
-    margin-top: 30px;
-  }
-  
-  .hero-image {
-    order: 1;
+    gap: 30px;
   }
   
   .hero-buttons {
     justify-content: center;
   }
   
-  .timeline::before {
-    left: 60px;
+  .hero-image img {
+    max-width: 70%;
   }
   
-  .timeline-item {
+  /* Navigation menu for tablets */
+  #nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    transition: left 0.3s ease;
+    z-index: 1001;
+    padding-top: 70px;
+  }
+  
+  #nav-menu ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 20px;
+  }
+  
+  #nav-menu ul li {
+    margin-left: 0;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 0;
   }
   
-  .timeline-item:nth-child(even) {
+  #nav-menu ul li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1002;
+  }
+  
+  .menu-toggle:hover {
+    transform: scale(1.1);
+  }
+  
+  #nav-menu.active {
     left: 0;
+    animation: slideIn 0.3s ease forwards;
   }
   
-  .timeline-dot {
-    left: 52px;
-    right: auto;
+  /* Overlay when menu is active */
+  .menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
   }
   
-  .timeline-item:nth-child(even) .timeline-dot {
-    left: 52px;
+  .menu-overlay.active {
+    display: block;
+  }
+  
+  @keyframes slideIn {
+    from { left: -100%; }
+    to { left: 0; }
+  }
+  
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+  
   section {
     padding: 50px 0;
   }
   
-  .menu-toggle {
-    display: block;
-  }
-  
-  #nav-menu {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 80%;
-    height: 100vh;
-    background-color: white;
-    transition: 0.3s;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-  }
-  
-  #nav-menu.active {
-    left: 0;
-  }
-  
-  #nav-menu ul {
-    flex-direction: column;
-  }
-  
-  #nav-menu ul li {
-    margin: 10px 0;
+  .section-title {
+    margin-top: 30px;
+    margin-bottom: 25px;
   }
   
   .skills-container {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .project-image {
+    height: 180px;
   }
   
   .footer-content {
     grid-template-columns: 1fr;
-    text-align: center;
+    gap: 40px;
   }
   
-  .footer-info h3::after,
-  .footer-links h3::after,
-  .footer-contact h3::after {
-    left: 50%;
-    transform: translateX(-50%);
+  /* Adjust timeline for better mobile view */
+  .timeline::before {
+    left: 20px;
   }
   
-  .footer-contact p {
-    justify-content: center;
+  .timeline-item {
+    padding-left: 50px;
   }
   
-  .social-links {
-    justify-content: center;
+  .timeline-dot {
+    left: 12px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 12px;
   }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
   h1 {
     font-size: 2rem;
   }
@@ -154,40 +248,113 @@
     font-size: 1.25rem;
   }
   
+  p {
+    font-size: 0.95rem;
+  }
+  
+  #hero {
+    padding: 120px 0 50px;
+  }
+  
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
   .hero-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   
-  .section-title {
-    margin-bottom: 30px;
+  .hero-content p {
+    font-size: 1rem;
   }
   
   .btn {
     padding: 10px 20px;
+    font-size: 0.9rem;
   }
   
   .hero-buttons {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
   
-  .timeline-item {
-    padding-left: 70px;
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 200px;
   }
   
-  .timeline::before {
-    left: 30px;
+  .hero-image img {
+    max-width: 85%;
   }
   
-  .timeline-dot {
-    left: 22px;
+  .skill-tag {
+    padding: 6px 12px;
+    font-size: 0.85rem;
   }
   
-  .timeline-item:nth-child(even) .timeline-dot {
-    left: 22px;
+  .project-content {
+    padding: 15px;
+  }
+  
+  /* Fix scrolling issues on small devices */
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  /* Adjust header padding for mobile */
+  #header {
+    padding: 10px 0;
+  }
+  
+  .logo a {
+    font-size: 1.3rem;
+  }
+  
+  /* Improve contact CTA for mobile */
+  #contact-cta {
+    padding: 40px 0;
+  }
+  
+  #contact-cta p {
+    font-size: 1rem;
+  }
+  
+  /* Adjust social links spacing */
+  .social-links {
+    gap: 10px;
+  }
+  
+  .social-links a {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Fix for very small devices (iPhone SE, Galaxy Fold, etc.) */
+@media (max-width: 374.98px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.1rem;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
+  #nav-menu {
+    width: 220px;
   }
 }
