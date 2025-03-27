@@ -3,6 +3,48 @@
  * Author: Rohini Ramakrishna
  * Version: 1.0
  */
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    function checkVisibility() {
+        timelineItems.forEach(item => {
+            const position = item.getBoundingClientRect();
+            
+            // Check if item is in viewport
+            if(position.top < window.innerHeight && position.bottom >= 0) {
+                item.classList.add('visible');
+            }
+        });
+    }
+    
+    // Initial check
+    checkVisibility();
+    
+    // Check on scroll
+    window.addEventListener('scroll', checkVisibility);
+    
+    // Header scroll effect
+    const header = document.getElementById('header');
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (scrollTop > 50) {
+            header.classList.add('scrolled');
+            
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                header.classList.add('scroll-down');
+            } else {
+                header.classList.remove('scroll-down');
+            }
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScrollTop = scrollTop;
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   // Navigation Menu Toggle

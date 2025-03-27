@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohini Ramakrishna | Senior Software Developer</title>
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Rohini Ramakrishna - Senior Software Developer with 10+ years of experience in Ruby on Rails, JavaScript, and cloud-based solutions">
-    <meta name="keywords" content="software developer, ruby on rails, javascript, api development, munich, germany, India, Bangalore">
+    <meta name="description" content="Rohini Ramakrishna - Senior Software Developer with 10+ years of experience in Ruby on Rails, JavaScript, PostgreSQL and cloud-based solutions">
+    <meta name="keywords" content="software developer, ruby on rails, javascript, postgresql, api development, munich, germany, India, Bangalore">
     <meta name="author" content="Rohini Ramakrishna">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Rohini Ramakrishna | Senior Software Developer">
-    <meta property="og:description" content="Experienced software developer specializing in Ruby on Rails, JavaScript, and API integrations">
-    <meta property="og:image" content="assets/images/me.png">
+    <meta property="og:description" content="Experienced software developer specializing in Ruby on Rails, PostgreSQL, JavaScript, and API integrations">
+    <meta property="og:image" content="assets/images/profile.jpg">
     <meta property="og:url" content="https://rohinirao.github.io">
     <meta property="og:type" content="website">
     <!-- Favicon -->
@@ -23,349 +23,182 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">Rohini <span>Ramakrishna</span></a>
+  <!-- Header -->
+  <header id="header">
+      <div class="container">
+          <div class="logo">
+              <a href="index.html">Rohini <span>Ramakrishna</span></a>
+          </div>
+          <nav id="nav-menu">
+              <ul>
+                  <li><a href="index.html" class="active">About</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+              </ul>
+          </nav>
+          <div class="menu-toggle">
+              <i class="fas fa-bars"></i>
+          </div>
+      </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <h1>Hello, I'm <span>Rohini Ramakrishna</span></h1>
+            <h2>Senior Software Developer</h2>
+            <p>Specializing in Ruby on Rails, PostgreSQL, and Rest API integrations</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn btn-primary">View My Work</a>
+                <a href="#contact-cta" class="btn btn-outline">Get In Touch</a>
             </div>
-            <nav id="nav-menu">
+        </div>
+        <div class="hero-image fade-in">
+            <img src="assets/images/profile.jpg" alt="Rohini Ramakrishna">
+        </div>
+    </div>
+  </section>
+
+    <!-- About Content -->
+    <section id="about-content">
+      <div class="container">
+          <div class="about-grid slide-up">
+              <div class="about-text">
+                  <h2 class="section-title">Who I Am</h2>
+                  <p>Hello! I'm Rohini Ramakrishna, a Senior Software Developer with over 10 years of experience in creating robust, scalable solutions across various domains. Based in Munich, Germany, I specialize in Ruby on Rails, PostgreSQL, JavaScript, and cloud-based technologies.</p>
+                  
+                  <p>My journey in software development began in 2008, and since then, I've worked on a diverse range of projects including B2B platforms, cloud infrastructure, loan management systems, Payroll and time management applications. I'm passionate about building clean, maintainable code and creating solutions that solve real business problems.</p>
+                  
+                  <p>What drives me is the opportunity to transform complex requirements into elegant, user-friendly applications. I enjoy the challenge of optimizing performance, enhancing scalability, and ensuring reliability in the systems I develop.</p>
+                  
+                  <h2 class="section-title">My Approach</h2>
+                  <p>I believe in a thoughtful, collaborative approach to software development, where every project begins with a deep understanding of requirements and business goals. I value clean code, test-driven development, and continuous integration to ensure quality and maintainability.</p>      
+                  <p>Throughout my career, I've worked with various Agile methodologies, collaborating with Agile coaches, Scrum Masters, Product Owners, and Project Managers across different companies. This experience has shown me that Agile works—but finding the right approach is key. The best Agile framework depends on the team dynamics, project scope, and company culture rather than strictly following every rule. I’m comfortable adapting to different Agile workflows while ensuring efficiency and collaboration.</p>
+                  <p>I take ownership and accountability for the features and projects I work on, ensuring they are successfully completed. At the same time, I thrive in team environments, working closely with fellow developers, product managers, and designers. I enjoy code reviews and technical discussions, always open to exploring different perspectives without ego. While I have strong opinions, I believe professional work should be about the best solution, not personal preferences.</p>
+                  <p>I firmly follow fundamental software principles like KISS (Keep It Simple, Stupid), DRY (Don’t Repeat Yourself), and SOLID. My philosophy prioritizes readability, where variable names, methods, and class names should make code as understandable as natural language. While comments are valuable for complex logic, I believe that well-written code should largely speak for itself.</p>
+                  <p>Testing and documentation are at the core of my workflow. Unit testing boosts confidence in the code and simplifies debugging, especially in edge cases. I also believe in writing documentation throughout the development process, not as an afterthought.</p>
+                  <p>When it comes to professional growth, I recognize my strengths—adaptability and accountability—as well as areas for improvement. I sometimes struggle with saying ‘no’ and overcommitting, but I am continuously working to balance enthusiasm with realistic commitments.</p>
+              </div>
+          </div>
+          
+          <div class="about-journey">
+              <h2 class="section-title">My Professional Journey</h2>
+              <div class="timeline">
+                  <div class="timeline-item animate-on-scroll">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <h3>Senior Software Developer</h3>
+                          <h4>Experteer, Munich, Germany</h4>
+                          <p class="timeline-date">Nov 2019 – Jan 2025</p>
+                          <p>At Experteer, I focused on developing and integrating REST APIs, working with technologies like Kafka, ElasticSearch, and Redis. I created a custom translation module using Node.js and significantly improved application performance by optimizing legacy code and implementing new features.</p>
+                      </div>
+                  </div>
+                  <div class="timeline-item animate-on-scroll">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <h3>Senior Member of Technical Staff</h3>
+                          <h4>Oracle India Pvt Ltd, Bangalore</h4>
+                          <p class="timeline-date">Jan 2018 – Nov 2019</p>
+                          <p>At Oracle, I developed a comprehensive lifecycle management system for Oracle Cloud Infrastructure teams and designed automated patching strategies that improved efficiency by 40%. I also maintained high unit test coverage using RSpec and integration tests.</p>
+                      </div>
+                  </div>
+                  <div class="timeline-item animate-on-scroll">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <h3>Senior System Analyst</h3>
+                          <h4>Sonata Software Ltd, Bangalore</h4>
+                          <p class="timeline-date">Dec 2013 – Dec 2017</p>
+                          <p>During my time at Sonata Software, I enhanced the Redmine application by automating manual processes through workflow optimizations and led development on several key projects including Timesheet and Project Management systems and a Loan Auditing System.</p>
+                      </div>
+                  </div>
+                  <div class="timeline-item animate-on-scroll">
+                      <div class="timeline-dot"></div>
+                      <div class="timeline-content">
+                          <h3>Earlier Roles</h3>
+                          <h4>Trigent Software Ltd & Relyon Softech Ltd</h4>
+                          <p class="timeline-date">Mar 2008 – Dec 2013</p>
+                          <p>In my earlier roles, I designed frontends for Hadoop bulk data upload applications, led database design for payroll and tax applications, and developed TDS Web Plugin, Tax Calculation, and Time & Attendance Management software.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="center-button">
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about-interests">
+            <h2 class="section-title">Beyond Coding</h2>
+            <div class="interests-grid">
+                <div class="interest-item skill-category">
+                    <i class="fas fa-book"></i>
+                    <h3>Continuous Learning</h3>
+                    <p>I'm constantly expanding my knowledge through online courses, technical blogs, and conferences.</p>
+                </div>
+                <div class="interest-item skill-category">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Engagement</h3>
+                    <p>I enjoy participating in developer communities and knowledge sharing sessions.</p>
+                </div>
+                <div class="interest-item skill-category">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Problem Solving</h3>
+                    <p>I love tackling complex problems and finding efficient, elegant solutions.</p>
+                </div>
+                <div class="interest-item skill-category">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Perspective</h3>
+                    <p>Having worked in different countries, I bring a diverse perspective to my projects.</p>
+                </div>
+                <div class="interest-item skill-category">
+                    <i class="fas fa-heart"></i>
+                    <h3>Personal Interests</h3>
+                    <p>Outside the world of code, I'm passionate about exploring new horizons through travel and experiencing different cultures. I find joy in reading, cooking, photography, and cycling—activities that not only provide balance in my life but also inspire fresh approaches to my technical work.</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Contact CTA Section -->
+  <section id="contact-cta">
+    <div class="container fade-in">
+        <h2>Interested in working together?</h2>
+        <p>Let's discuss how I can contribute to your next project, Get In Touch</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Rohini Ramakrishna</h3>
+                <p>Senior Software Developer based in Munich, Germany</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> rohini.rao.r@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
+                <div class="social-links">
+                    <a href="mailto:rohini.rao.r@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rohinirao" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container">
-            <div class="hero-content fade-in">
-                <h1>Hello, I'm <span>Rohini Ramakrishna</span></h1>
-                <h2>Senior Software Developer</h2>
-                <p>Specializing in Ruby on Rails, PostgreSQL, and Rest API integrations</p>
-                <div class="hero-buttons">
-                    <a href="projects.html" class="btn btn-primary">View My Work</a>
-                    <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image fade-in">
-                <img src="assets/images/me.png" alt="Rohini Ramakrishna">
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rohini Ramakrishna. All Rights Reserved.</p>
         </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- About Summary Section -->
-    <section id="about-summary">
-        <div class="container slide-up">
-            <h2 class="section-title">About Me</h2>
-            <p>I’m a Senior Software Developer with over 10 years of experience in building, designing, and deploying software solutions. I specialize in Ruby on Rails, PostgreSQL, JavaScript, and cloud-based systems, working on B2B, B2C, Loan Management, Payroll, and Time Management applications. I have a strong background in scalable backend development, API integrations, and system optimization to improve performance and efficiency. I enjoy solving complex problems, automating workflows, and building reliable systems that make a real impact.</p>
-            <div class="center-button">
-                <a href="about.html" class="btn btn-outline">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Ruby</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">Node.js</span>
-                    </div>
-                </div>
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Ruby on Rails</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">AJAX</span>
-                    </div>
-                </div>
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-database"></i> Databases & Tools</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">ElasticSearch</span>
-                        <span class="skill-tag">Kafka</span>
-                        <span class="skill-tag">Sidekiq</span>
-                    </div>
-                </div>
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-check-square"></i> Testing & QA</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">RSpec</span>
-                        <span class="skill-tag">Minitest</span>
-                        <span class="skill-tag">Capybara</span>
-                    </div>
-                </div>
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-code-branch"></i> DevOps & Deployment</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">GitLab</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">AWS</span>
-                    </div>
-                </div>
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-server"></i> Software Development Principles & Practices</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">Agile</span>
-                        <span class="skill-tag">Scrum</span>
-                        <span class="skill-tag">OOP </span>
-                        <span class="skill-tag">SOLID principles</span>
-                        <span class="skill-tag">Agile</span>
-                        <span class="skill-tag">DRY</span>
-                        <span class="skill-tag">KISS</span>
-                    </div>
-                </div>
-                <div class="skill-category slide-up">
-                    <h3><i class="fas fa-tasks"></i> Backend & API Development</h3>
-                    <div class="skill-list">
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">GraphQL</span>
-                        <span class="skill-tag">Microservices</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Projects Section -->
-    <section id="featured-projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card slide-up">
-                    <div class="project-image">
-                        <img src="assets/images/API-integration.png" alt="API Integration Project">
-                    </div>
-                    <div class="project-content">
-                        <h3>REST API integrations</h3>
-                        <p>At Experteer, I took on the challenge of integrating multiple APIs—LinkedIn Ads, FreshDesk, MessageBird, and TalentInc—to create a seamless data flow across our systems. One of the most rewarding aspects was seeing how these integrations transformed our operations, from automating support communications to enabling real-time candidate updates and optimizing ad targeting. Each integration brought its own complexities, but solving them meant improving efficiency and delivering a smoother experience for both users and internal teams.</p>
-                        <div class="project-tech">
-                            <span>Ruby on Rails</span>
-                            <span>JavaScript</span>
-                            <span>PostgreSQL</span>
-                            <span>ElasticSearch</span>
-                            <span>Kafka</span>
-                            <span>Redis</span>
-                            <span>RSpec</span>
-                        </div>
-                        <div class="hero-buttons">
-                            <a href="projects.html#api-integration" class="btn btn-outline">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card slide-up">
-                    <div class="project-image">
-                        <img src="assets/images/translation-module.png" alt="Translation Module">
-                    </div>
-                    <div class="project-content">
-                        <h3>Custom Translation Module</h3>
-                        <p>At Experteer, we faced a challenge—our existing Rails-based translation system couldn’t support our newer React.js and Next.js projects. Instead of rebuilding everything from scratch, I designed a custom translation module in Node.js that seamlessly connected the old system with the new. To make the process efficient, I automated the entire translation workflow. The system eliminated manual effort, streamlined the process, and ensured smooth multilingual support across all platforms.</p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>PostgreSQL</span>
-                            <span>Redis</span>
-                        </div>
-                        <div class="hero-buttons">
-                            <a href="projects.html#translation-module" class="btn btn-outline">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card slide-up">
-                    <div class="project-image">
-                        <img src="assets/images/oca.png" alt="One Click Apply">
-                    </div>
-                    <div class="project-content">
-                        <h3>One-Click Application for Candidates</h3>
-                        <p>The One-Click Apply project streamlined the job application process by allowing candidates to apply instantly without a lengthy onboarding process. I built a backend system that automatically created user accounts and profiles based on uploaded resumes, ensuring a seamless experience. I implemented Experteer-branded resume generation and automated job application submission to recruiters and headhunters. </p>
-                        <div class="project-tech">
-                            <span>Ruby on Rails</span>
-                            <span>JavaScript</span>
-                            <span>PostgreSQL</span>
-                            <span>Kafka</span>
-                            <span>Redis</span>
-                            <span>RSpec</span>
-                        </div>
-                        <div class="hero-buttons">
-                            <a href="projects.html#oca" class="btn btn-outline">View Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="center-button">
-                <a href="projects.html" class="btn btn-primary">View All Projects</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Summary Section -->
-    <section id="experience-summary">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior Software Developer</h3>
-                        <h4>Experteer, Munich, Germany</h4>
-                        <span class="timeline-date">Nov 2019 – Jan 2025</span>
-                        <p>Led development of API integration platform and contributed to major feature implementations.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior Member of Technical Staff</h3>
-                        <h4>Oracle India Pvt Ltd, Bangalore</h4>
-                        <span class="timeline-date">Jan 2018 – Nov 2019</span>
-                        <p>Developed cloud infrastructure management solutions and automated patching strategies.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior System Analyst</h3>
-                        <h4>Sonata Software Ltd, Bangalore</h4>
-                        <span class="timeline-date">Dec 2013 – Dec 2017</span>
-                        <p>Designed and implemented custom software solutions for enterprise clients.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Previous Positions</h3>
-                        <h4>Trigent Software Ltd & Relyon Softech Ltd</h4>
-                        <span class="timeline-date">Mar 2008 – Dec 2013</span>
-                        <p>Developed and maintained multiple software applications focusing on payroll and time management.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="center-button">
-                <a href="resume.html" class="btn btn-primary">View Full Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact CTA Section -->
-    <section id="contact-cta">
-        <div class="container fade-in">
-            <h2>Interested in working together?</h2>
-            <p>Let's discuss how I can contribute to your next project</p>
-            <a href="contact.html" class="btn btn-primary">Get In Touch</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Rohini Ramakrishna</h3>
-                    <p>Senior Software Developer based in Munich, Germany</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> rohini.rao.r@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Munich, Germany</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/rohini-ramakrishna-b1228215/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/rohinirao" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Rohini Ramakrishna. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="assets/js/main.js"></script>
-    <script>
-        // Script to add visible class to timeline items
-        document.addEventListener('DOMContentLoaded', function() {
-            const timelineItems = document.querySelectorAll('.timeline-item');
-            
-            function checkVisibility() {
-                timelineItems.forEach(item => {
-                    const position = item.getBoundingClientRect();
-                    
-                    // Check if item is in viewport
-                    if(position.top < window.innerHeight && position.bottom >= 0) {
-                        item.classList.add('visible');
-                    }
-                });
-            }
-            
-            // Initial check
-            checkVisibility();
-            
-            // Check on scroll
-            window.addEventListener('scroll', checkVisibility);
-            
-            // Header scroll effect
-            const header = document.getElementById('header');
-            let lastScrollTop = 0;
-            
-            window.addEventListener('scroll', function() {
-                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                
-                if (scrollTop > 50) {
-                    header.classList.add('scrolled');
-                    
-                    if (scrollTop > lastScrollTop && scrollTop > 200) {
-                        header.classList.add('scroll-down');
-                    } else {
-                        header.classList.remove('scroll-down');
-                    }
-                } else {
-                    header.classList.remove('scrolled');
-                }
-                
-                lastScrollTop = scrollTop;
-            });
-        });
-    </script>
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
 </body>
-</html>
